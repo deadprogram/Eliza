@@ -247,15 +247,16 @@ def analyze(statement):
 
 
 def main():
-    print "Hola ¿Cómo te sientes hoy?¿Con resaca?"
+    print("¡Hola! Me llamo Eliza. ¿Cómo te puedo ayudar?")
 
     while True:
-        statement = raw_input("> ").lower()
-
-        print analyze(statement)
+        statement = input().lower()
 
         if statement == "quit":
+            print("Hasta luego.")
             break
+
+        print(analyze(statement))
 
 
 if __name__ == "__main__":
